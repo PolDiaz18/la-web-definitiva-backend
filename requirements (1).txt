@@ -1,0 +1,18 @@
+# =============================================================================
+# DEPENDENCIAS DEL PROYECTO
+# =============================================================================
+# Este archivo le dice a pip (y a Railway) qué librerías necesita instalar.
+# Cada línea es una librería con su versión.
+#
+# Para instalar en local: pip install -r requirements.txt
+# Railway lo hace automáticamente al detectar este archivo.
+
+# --- Servidor web ---
+fastapi==0.115.0          # Framework para crear la API REST
+uvicorn[standard]==0.30.0  # Servidor ASGI que ejecuta FastAPI
+
+# --- Bot de Telegram ---
+python-telegram-bot==21.6  # Librería para interactuar con la API de Telegram
+
+# --- Planificador de tareas ---
+APScheduler==3.10.4        # Ejecuta funciones a horas programadas (recordatorios)
